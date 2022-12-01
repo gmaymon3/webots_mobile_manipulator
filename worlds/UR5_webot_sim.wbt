@@ -30,8 +30,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.09140145469862924 -0.02058683421251992 -0.9956013039043696 4.3900433581120515
-  position 2.9065108297484055 -1.5690745243165753 2.2414255949908206
+  orientation 0.2665052516736704 -0.13544021991049385 -0.954269824347889 4.284955120595544
+  position 2.643075026062871 -2.8556554707722657 2.745172253973017
 }
 TexturedBackground {
   texture "factory"
@@ -117,7 +117,7 @@ Solid {
       }
       geometry Mesh {
         url [
-          "../../../Downloads/creality-ender-3-v2-2.snapshot.5/Ender 3.stl"
+          "../STL_files/Ender 3.stl"
         ]
       }
     }
@@ -161,6 +161,27 @@ Table {
     IBLStrength 10
   }
 }
+Solid {
+  translation 0 1.42 0.740372
+  scale 0.008 0.008 0.008
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "../STL_files/drawer1.stl"
+        ]
+      }
+    }
+  ]
+  name "solid(2)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
+  }
+}
 Door {
   translation -5.6651 -6.60923 2.66454e-15
   position -1.139049985797786e-09
@@ -185,7 +206,7 @@ Solid {
       }
       geometry Mesh {
         url [
-          "../../../Downloads/frame1-c.STL"
+          "../STL_files/frame1-c.STL"
         ]
       }
     }
@@ -193,8 +214,6 @@ Solid {
   name "solid(1)"
   boundingObject Box {
     size 0.1 0.1 0.1
-  }
-  physics Physics {
   }
 }
 OfficeChair {
@@ -327,7 +346,7 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.22314380396466474 -0.20449996661010172 0.0031201206762478
+        translation 0.22314380396466474 -0.20449996661010172 0.003120120676247803
         rotation 0.9897111242743 0.10117266253847555 -0.10117303416709861 1.5811419875369448
         children [
           DEF INTERIOR_WHEEL Group {
@@ -497,7 +516,7 @@ Robot {
       ]
       endPoint Solid {
         translation -0.22563683993500033 -0.20449996703966933 0.00013215791689291258
-        rotation -0.5936554946291507 0.5690214297491817 -0.5690235198854396 4.2130721538412175
+        rotation -0.5936554946291508 0.5690214297491818 -0.5690235198854398 4.2130721538412175
         children [
           USE EXTERIOR_WHEEL
         ]
