@@ -30,8 +30,8 @@ WorldInfo {
   ]
 }
 Viewpoint {
-  orientation 0.3159136141111937 -0.24667682847431413 -0.9161599918753589 4.589010505442715
-  position 2.605864878855678 -2.3488108302111748 5.231630894189279
+  orientation 0.09140145469862924 -0.02058683421251992 -0.9956013039043696 4.3900433581120515
+  position 2.9065108297484055 -1.5690745243165753 2.2414255949908206
 }
 TexturedBackground {
   texture "factory"
@@ -169,10 +169,32 @@ IntermodalOfficeContainer {
   translation 0.697281 -10.2307 2.84217e-14
 }
 RectangleArena {
-  translation 2.01068 -5.12401 -3.55271e-14
+  translation 2.71753 -4.70171 -3.55271e-14
   floorSize 60 60
   floorAppearance Parquetry {
     type "dark strip"
+  }
+}
+Solid {
+  translation 1.93087 1.6565 0.94
+  rotation 0.5773509358554485 0.5773489358556708 0.5773509358554485 2.0944
+  scale 0.003 0.003 0.003
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Mesh {
+        url [
+          "../../../Downloads/frame1-c.STL"
+        ]
+      }
+    }
+  ]
+  name "solid(1)"
+  boundingObject Box {
+    size 0.1 0.1 0.1
+  }
+  physics Physics {
   }
 }
 OfficeChair {
@@ -305,7 +327,7 @@ Robot {
         }
       ]
       endPoint Solid {
-        translation 0.22314380396466474 -0.20449996661010172 0.003120120676247796
+        translation 0.22314380396466474 -0.20449996661010172 0.0031201206762478
         rotation 0.9897111242743 0.10117266253847555 -0.10117303416709861 1.5811419875369448
         children [
           DEF INTERIOR_WHEEL Group {
